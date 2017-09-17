@@ -10,18 +10,8 @@
 }
 
 @font-face {
-    font-family: Proxima Nova Light;
-    src: local(ProximaNovaLight), local(Proxima Nova Light), url(proximanova-light.ttf);
-}
-
-@font-face {
     font-family: Proxima Nova Regular;
     src: local(ProximaNovaRegular), local(Proxima Nova Regular), url(proximanova-regular.ttf);
-}
-
-@font-face {
-    font-family: Proxima Nova Bold;
-    src: local(ProximaNovaBold), local(Proxima Nova Bold), url(proximanova-bold.ttf);
 }
 
 @font-face {
