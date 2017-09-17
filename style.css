@@ -1,0 +1,158 @@
+html {
+	background: #4e5860;
+	min-height: 100%;
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+    font-size: 10px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+}
+/*
+*{
+    border: 1px solid red;
+}
+*/
+
+section{
+    margin: auto;
+}
+
+article{
+    width: 39rem;
+    height: 46.6rem;
+    background: #f1f8f9;
+    border-radius: 1rem;
+}
+
+.main{
+    min-height: 33rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.refresh{
+    align-self: flex-end;
+    margin: 1.4rem;
+    background: none;
+    border: none;
+}
+
+.icon_weather{
+    margin: 1.4rem;
+}
+
+aside{
+    width: 39rem;
+    display: flex;
+    flex-direction: row;
+    padding: 3.6rem 2rem 1rem 2rem;
+    padding-right: 0;
+    box-sizing: border-box;
+    color: #a5acaf;
+}
+
+.degre{
+    flex: 1 0 auto;
+}
+.degre h1{
+    font-size: 5.6rem;
+    font-family: 'Proxima Nova thin', sans-serif;
+    font-weight: 200;
+    margin: 0;
+}
+.degre h1 sup{
+    font-size: 1.6rem;
+}
+
+.city{
+    flex: 3 0 auto;
+}
+.city h3{
+    font-family: 'Source Sans Light';
+    font-size: 2.4rem;
+    font-weight: 200;
+    margin: 0;
+    margin-top: .8rem;
+    color: #c9d0d4;
+}
+.city span{
+    font-family: 'Source Sans Light';
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.date{
+    background: #54bae6;
+    padding: 1.5rem 2rem;
+    max-width: 6.5rem;
+    max-height: 7rem;
+    flex: 0;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.date .day{
+    font-size: 1.8rem;
+}
+
+
+footer{
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap; 
+    color: #fff;
+    background: #2e3335;
+    height: 13.8rem;
+    box-sizing: border-box;
+    border-radius: 0 0 1rem 1rem;
+}
+footer div{
+    flex: 1 0 auto;
+}
+
+.option{
+    display: flex;
+    flex: 1 0 100%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 2.4rem;
+}
+.option img{
+    margin: 0 1.8rem;
+}
+.option span{
+    font-size: 1.4rem;
+    font-family: Proxima Nova Regular;
+    margin-right: 2rem;
+}
+
+.pagination{
+    margin: auto;
+    padding: 0;
+}
+.pagination li{
+    display: inline-block;
+    border: 2px solid #585c5d;
+    border-radius: 50%;
+    margin: 0 .4rem;
+    height: .6rem;
+    width: .6rem;
+    padding: 0;
+}
+.pagination li.active{
+    background: #fff;
+    border-color: #fff;
+}
