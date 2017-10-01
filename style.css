@@ -3,20 +3,22 @@ html {
     font-size: 10px;
     background: #4e5860;
 }
-*{
-    border: 1px solid red;
-}
+
 body {
     height: 100%;
     display: grid;
     justify-items: center;
     align-items: center;
 }
+.grid-col-3 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
 .widget {
     display: grid;
     grid-template-columns: 39rem;
     grid-template-rows: repeat(2, auto);
-
     background: #f1f8f9;
     border-radius: 1.5rem;
     box-shadow: 0rem 1rem 3rem rgba(0,0,0,0.2);
@@ -24,9 +26,10 @@ body {
 .main{
     display: grid;
     grid-template-rows: repeat(3, auto);
+    justify-items: center;
 }
 .main__button {
-
+    justify-self: end;
     width: 2.1rem;
     height: 1.9rem;
     margin: 1.4rem;
@@ -35,28 +38,27 @@ body {
     border: none;
 }
 .main__icon-weather{
-
     width: 14.6rem;
     height: 12.1rem;
     margin: 1.4rem;
     background-image: url(icons/cloudy.png);
 }
 .info {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-
+    grid-template-columns: 2fr 4fr 1fr;
     padding: 4.5rem 0rem 1.4rem 0rem;
     color: #a5acaf;
 }
 .info__col1 {
-
+    display: grid;
+    justify-items: center;
 }
 .info__col2 {
-
+    display: grid;
+    grid-template-columns: 1fr;
     font-family: 'Source Sans Light';
 }
 .info__col3 {
-
+    text-align: center;
     padding: 1.8rem 1.8rem;
     background: #54bae6;
     color: #fff;
@@ -64,18 +66,16 @@ body {
     font-size: 1.4rem;
 }
 .info__degree{
-
     font-size: 5.6rem;
     font-family: 'Proxima Nova thin', sans-serif;
 }
 .info__weather {
-
+    align-self: end;
     font-size: 2.4rem;
     font-weight: 200;
     color: #c9d0d4;
 }
 .info__city{
-
     font-size: 1.6rem;
     font-weight: 900;
 }
@@ -83,16 +83,13 @@ body {
     font-size: 1.8rem;
 }
 .footer {
-
     color: #fff;
     background: #2e3335;
     border-radius: 0 0 1.3rem 1.3rem;
 }
 .opt{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
     justify-items: center;
-    padding: 4.5rem 2rem 3rem;
+    padding: 4rem 2rem 2rem;
 }
 .opt__col{
     font-size: 1.4rem;
@@ -113,16 +110,11 @@ body {
     content: url(icons/sun.png);
 }
 .paginarot {
-    display: grid;
-    grid-template-rows: 3fr;
-    justify-items: center;
-
+    justify-content: center;
     padding: 0;
     padding: 1rem;
-    margin-bottom: 1rem;
 }
 .paginarot__li {
-
     border: 2px solid #585c5d;
     list-style: none;
     border-radius: 50%;
