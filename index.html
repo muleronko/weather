@@ -2,50 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonds/fonds.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="js/prefixfree.min.js"></script>
     <title>Weather</title>
 </head>
 
-<body>
-    <section>
-        <article class="weather">
-            <div class="main">
-                <button class="refresh"><img src="icons/refreshe.png" alt=""></button>
+<body class="flex-column">
+    <section class="section-widget">
+        <article class="widget">
+            <div class="main flex-column">
+                <div class="main__button"></div>
 
-                <img class="icon_weather" src="icons/cloudy.png" alt="">
+                <div class="main__icon-weather"></div>
 
                 <aside class="info">
-                    <div class="degree">
-                        <h1>79<sup> О</sup></h1>
-                    </div>
-                    <div class="city">
-                        <h3>Cloudy Skies</h3>
-                        <span>Sicklerville, New Jersey</span>
+                    <div class="info__col1">
+                        <span class="info__degree">79&deg</span>
                     </div>
 
-                    <div class="date">
-                        <span class="month">MAY</span>
-                        <span class="day">21</span>
+                    <div class="info__col2 flex-column">
+                        <span class="info__weather">Cloudy Skies</span>
+                        <span class="info__city">Sicklerville, New Jersey</span>
                     </div>
 
+                    <div class="info__col3 flex-column">
+                        <span class="info__month">MAY</span>
+                        <span class="info__day">21</span>
+                    </div>
                 </aside>
             </div>
-            <footer>
-                <div class="option">
-                    <img src="icons/wind.png" alt="">
-                    <span>2 MPH</span>
-               
-                    <img src="icons/perc.png" alt="">
-                    <span>33%</span>
-           
-                    <img src="icons/sun.png" alt="">
-                    <span>83%</span>
+            <footer class="footer">
+                <div class="opt">
+                    <span class="opt__col opt__col--wind before">2 MPH</span>
+                    <span class="opt__col opt__col--perc before">33%</span>
+                    <span class="opt__col opt__col--sun before">83%</span>
                 </div>
-                <ul class="pagination">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
+                <ul class="paginarot">
+                    <li class="paginarot__li paginarot__li--active"></li>
+                    <li class="paginarot__li"></li>
+                    <li class="paginarot__li"></li>
                 </ul>
             </footer>
         </article>
