@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
-    <script src="js/prefixfree.min.js"></script>
     <title>Weather</title>
 </head>
 
 <body>
-    <section class="section-widget">
-        <article class="widget">
-            <div class="main">
-                <div class="main__button"></div>
-
-                <div class="main__icon-weather"></div>
-
-                <aside class="info grid-col-3">
-                    <div class="info__col1">
-                        <span class="info__degree">79&deg</span>
-                    </div>
-
-                    <div class="info__col2">
-                        <span class="info__weather">Cloudy Skies</span>
-                        <span class="info__city">Sicklerville, New Jersey</span>
-                    </div>
-
-                    <div class="info__col3">
-                        <span class="info__month">MAY</span>
-                        <span class="info__day">21</span>
-                    </div>
-                </aside>
+    <section class="widget">
+        <article class="main container">
+            <div class="row">
+                <div class="col-md-1 main__button"></div>
             </div>
-            <footer class="footer">
-                <div class="opt grid-col-3">
+            <div class="row">
+                <div class="col-md-1 main__icon-weather"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 info__col1">
+                    <span class="info__degree">79&deg</span>
+                </div>
+                <div class="col-md-8 info__col2">
+                    <span class="info__weather">Cloudy Skies</span>
+                    <span class="info__city">Sicklerville, New Jersey</span>
+                </div>
+                <div class="col-md-2 info__col3">
+                    <span class="info__month">MAY</span>
+                    <span class="info__day">21</span>
+                </div>
+            </div>
+            <footer class="footer row">
+                <div class="row">
                     <span class="opt__col opt__col--wind before">2 MPH</span>
                     <span class="opt__col opt__col--perc before">33%</span>
                     <span class="opt__col opt__col--sun before">83%</span>
                 </div>
-                <ul class="paginarot grid-col-3">
+                <ul class="row">
                     <li class="paginarot__li paginarot__li--active"></li>
                     <li class="paginarot__li"></li>
                     <li class="paginarot__li"></li>
@@ -47,5 +46,9 @@
             </footer>
         </article>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 </body>
+
 </html>
