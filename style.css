@@ -3,23 +3,28 @@ html {
     font-size: 10px;
     background: #4e5860;
 }
+
 body {
     flex: auto;
     height: 100%;
 }
-.flex-column{
+
+.flex-column {
     display: flex;
     flex-direction: column;
 }
+
 .section-widget {
     margin: auto;
 }
+
 .widget {
     width: 39rem;
     background: #f1f8f9;
     border-radius: 1.5rem;
-    box-shadow: 0rem 1rem 3rem rgba(0,0,0,0.2);
+    box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.2);
 }
+
 .main__button {
     align-self: flex-end;
     width: 2.1rem;
@@ -29,27 +34,33 @@ body {
     cursor: pointer;
     border: none;
 }
-.main__icon-weather{
+
+.main__icon-weather {
     align-self: center;
     width: 14.6rem;
     height: 12.1rem;
     margin: 1.4rem;
     background-image: url(icons/cloudy.png);
 }
+
 .info {
     display: flex;
+    flex-wrap: wrap;
     padding: 4.5rem 0rem 1.4rem 0rem;
     color: #a5acaf;
 }
+
 .info__col1 {
     flex: 2 0 auto;
     text-align: center;
 }
+
 .info__col2 {
     flex: 3 0 auto;
     flex-wrap: wrap;
     font-family: 'Source Sans Light';
 }
+
 .info__col3 {
     align-items: center;
     padding: 1.8rem 1.8rem;
@@ -58,25 +69,30 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4rem;
 }
-.info__degree{
+
+.info__degree {
     align-self: center;
     font-size: 5.6rem;
     font-family: 'Proxima Nova thin', sans-serif;
 }
+
 .info__weather {
     flex: 1 1 auto;
     font-size: 2.4rem;
     font-weight: 200;
     color: #c9d0d4;
 }
-.info__city{
+
+.info__city {
     flex: 1 1 auto;
     font-size: 1.6rem;
     font-weight: 900;
 }
+
 .info__day {
     font-size: 1.8rem;
 }
+
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -84,30 +100,37 @@ body {
     background: #2e3335;
     border-radius: 0 0 1.3rem 1.3rem;
 }
-.opt{
+
+.opt {
     display: flex;
     flex: 1 100%;
     justify-content: space-around;
     padding: 4.5rem 2rem 3rem;
 }
-.opt__col{
+
+.opt__col {
     font-size: 1.4rem;
     font-family: 'Proxima Nova Regular';
 }
+
 .opt__col::before {
     display: inline-block;
     vertical-align: middle;
     margin-right: 2rem;
 }
+
 .opt__col--wind::before {
     content: url(icons/wind.png);
 }
+
 .opt__col--perc::before {
     content: url(icons/perc.png);
 }
+
 .opt__col--sun::before {
     content: url(icons/sun.png);
 }
+
 .paginarot {
     display: flex;
     margin: auto;
@@ -115,6 +138,7 @@ body {
     padding: 1rem;
     margin-bottom: 1rem;
 }
+
 .paginarot__li {
     border: 2px solid #585c5d;
     list-style: none;
@@ -123,9 +147,43 @@ body {
     height: .5rem;
     width: .5rem;
 }
+
 .paginarot__li--active {
     background: #fff;
     border-color: #fff;
+}
+
+@media all and (max-width: 400px) {
+    .widget {
+        width: 20rem;
+    }
+    .main__icon-weather{
+        display: none;
+    }
+    .info {
+        padding: 0;
+    }
+    .info__col2 {
+        text-align: center;
+    }
+    .info__col3 {
+        width: 100%;
+        margin-top: 1rem;
+        padding: .5rem;
+    }
+    .opt {
+        padding: 2rem 1rem 0rem 1rem;
+        text-align: center;
+    }
+    .opt__col--wind::before {
+        content: none;
+    }
+    .opt__col--perc::before {
+        content: none;
+    }
+    .opt__col--sun::before {
+        content: none;
+    }
 }
 
 @font-face {
@@ -133,19 +191,23 @@ body {
     src: local(OpenSansBold), local(Open Sans Bold) url(fonts/opensansbold.ttf);
     font-weight: bold;
 }
+
 @font-face {
     font-family: Open Sans;
     src: local(OpenSans), local(Open Sans) url(fonts/opensans.ttf);
     font-weight: 100;
 }
+
 @font-face {
     font-family: Proxima Nova Thin;
     src: local(ProximaNovaThin), local(Proxima Nova Thin), url(fonts/proximanovat-thin.ttf);
 }
+
 @font-face {
     font-family: Proxima Nova Regular;
     src: local(ProximaNovaRegular), local(Proxima Nova Regular), url(fonts/proximanova-regular.ttf);
 }
+
 @font-face {
     font-family: Source Sans Light;
     src: local(SourceSansLight), local(Source Sans Light), url(fonts/SourceSansProLight.ttf);
