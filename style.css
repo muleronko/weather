@@ -116,6 +116,30 @@ section{
     border-color: #fff;
 }
 
+@media all and (max-width: 770px) {
+    .info {
+        padding: 0;
+    }
+    .info__col1, .info__col2, .info__col3{
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .main__icon-weather{
+        display: none;
+    }
+    .opt__col--wind::before {
+        content: none;
+    }
+    .opt__col--perc::before {
+        content: none;
+    }
+    .opt__col--sun::before {
+        content: none;
+    }
+}
+
 @font-face {
     font-family: Open Sans Bold;
     src: local(OpenSansBold), local(Open Sans Bold) url(fonts/opensansbold.ttf);
