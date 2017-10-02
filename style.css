@@ -127,6 +127,42 @@ body {
     border-color: #fff;
 }
 
+@media all and (max-width: 400px) {
+    .widget {
+        grid-template-columns: 20rem;
+    }
+    .main__icon-weather{
+        display: none;
+    }
+    .info {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        padding: 0;
+        width: 100%
+    }
+    .info__col2 {
+        text-align: center;
+    }
+    .info__col3 {
+        margin-top: 1rem;
+        padding: .5rem;
+    }
+    .opt {
+        padding: 2rem 1rem 0rem 1rem;
+        text-align: center;
+    }
+    .opt__col--wind::before {
+        content: none;
+    }
+    .opt__col--perc::before {
+        content: none;
+    }
+    .opt__col--sun::before {
+        content: none;
+    }
+}
+
+
 @font-face {
     font-family: Open Sans Bold;
     src: local(OpenSansBold), local(Open Sans Bold) url(fonts/opensansbold.ttf);
