@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
-    <script src="js/prefixfree.min.js"></script>
     <title>Weather</title>
 </head>
 
@@ -19,17 +18,17 @@
 
                 <aside class="info">
                     <div class="info__col1">
-                        <span class="info__degree">79&deg</span>
+                        <span class="info__degree">...</span>
                     </div>
 
                     <div class="info__col2 flex-column">
-                        <span class="info__weather">Cloudy Skies</span>
-                        <span class="info__city">Sicklerville, New Jersey</span>
+                        <span class="info__weather">...</span>
+                        <span class="info__city">...</span>
                     </div>
 
                     <div class="info__col3 flex-column">
-                        <span class="info__month">MAY</span>
-                        <span class="info__day">21</span>
+                        <span class="info__month">Load</span>
+                        <span class="info__day">...</span>
                     </div>
                 </aside>
             </div>
@@ -46,6 +45,36 @@
                 </ul>
             </footer>
         </article>
+
+        <article class="widget part_two">
+            <div class="main flex-column">
+                <div class="main__button"></div>
+
+                <aside class="info">
+                    <div class="info__form flex">
+                        <form action="">
+                            <input class="info__form--input" type="text">
+                            <input class="info__form--button" type="button" value="Найти">
+                        </form>
+                    </div>
+
+                    <div class="info__week">
+                        <ul class="week__ul flex">
+                            <li class="week__li">1</li>
+                            <li class="week__li">1</li>
+                            <li class="week__li">1</li>
+                            <li class="week__li">1</li>
+                            <li class="week__li">1</li>
+                            <li class="week__li">1</li>
+                            <li class="week__li">1</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </article>
     </section>
+
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
